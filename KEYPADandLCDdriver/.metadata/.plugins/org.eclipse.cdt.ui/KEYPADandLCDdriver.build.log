@@ -1,0 +1,20 @@
+14:32:29 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8468 bytes (51.7% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:32:30 Build Finished (took 141ms)
+

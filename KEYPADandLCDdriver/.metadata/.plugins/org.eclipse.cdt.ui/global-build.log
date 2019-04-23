@@ -1,0 +1,307 @@
+14:13:41 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8468 bytes (51.7% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:14:44 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../simplecalculator.c
+ 
+Building target: KEYPADandLCDdriver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPADandLCDdriver.map -mmcu=atmega16 -o "KEYPADandLCDdriver.elf"  ./keypad.o ./lcd.o ./simplecalculator.o   
+Finished building target: KEYPADandLCDdriver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPADandLCDdriver.elf  >"KEYPADandLCDdriver.lss"
+Finished building: KEYPADandLCDdriver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8452 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:24:36 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.h:14,
+                 from ../lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c:86:16: warning: multi-character character constant
+../lcd.c: In function 'LCD_displayStringRowColumn':
+../lcd.c:120: warning: passing argument 1 of 'LCD_displayString' discards qualifiers from pointer target type
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:126: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+../lcd.c:127: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../lcd.c
+ 
+Building target: KEYPADandLCDdriver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPADandLCDdriver.map -mmcu=atmega16 -o "KEYPADandLCDdriver.elf"  ./keypad.o ./lcd.o ./simplecalculator.o   
+Finished building target: KEYPADandLCDdriver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPADandLCDdriver.elf  >"KEYPADandLCDdriver.lss"
+Finished building: KEYPADandLCDdriver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8452 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:25:01 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.h:14,
+                 from ../lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c:86:16: warning: multi-character character constant
+../lcd.c: In function 'LCD_displayStringRowColumn':
+../lcd.c:120: warning: passing argument 1 of 'LCD_displayString' discards qualifiers from pointer target type
+../lcd.c: In function 'LCD_intgerToString':
+../lcd.c:126: warning: passing argument 2 of 'itoa' makes pointer from integer without a cast
+../lcd.c:127: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../lcd.c
+ 
+Building target: KEYPADandLCDdriver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPADandLCDdriver.map -mmcu=atmega16 -o "KEYPADandLCDdriver.elf"  ./keypad.o ./lcd.o ./simplecalculator.o   
+Finished building target: KEYPADandLCDdriver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPADandLCDdriver.elf  >"KEYPADandLCDdriver.lss"
+Finished building: KEYPADandLCDdriver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8442 bytes (51.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:27:08 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../lcd.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"lcd.d" -MT"lcd.o" -c -o "lcd.o" "../lcd.c"
+In file included from ../lcd.h:14,
+                 from ../lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../lcd.c:86:16: warning: multi-character character constant
+../lcd.c: In function 'LCD_displayStringRowColumn':
+../lcd.c:120: warning: passing argument 1 of 'LCD_displayString' discards qualifiers from pointer target type
+Finished building: ../lcd.c
+ 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../simplecalculator.c:22:29: warning: "/*" within comment
+../simplecalculator.c:31: error: expected identifier or '(' before 'return'
+../simplecalculator.c:33: error: expected identifier or '(' before '}' token
+make: *** [simplecalculator.o] Error 1
+14:27:22 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../simplecalculator.c:22:29: warning: "/*" within comment
+../simplecalculator.c: In function 'main':
+../simplecalculator.c:33: error: expected declaration or statement at end of input
+make: *** [simplecalculator.o] Error 1
+14:28:07 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../simplecalculator.c
+ 
+Building target: KEYPADandLCDdriver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPADandLCDdriver.map -mmcu=atmega16 -o "KEYPADandLCDdriver.elf"  ./keypad.o ./lcd.o ./simplecalculator.o   
+Finished building target: KEYPADandLCDdriver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPADandLCDdriver.elf  >"KEYPADandLCDdriver.lss"
+Finished building: KEYPADandLCDdriver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8452 bytes (51.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:28:32 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../simplecalculator.c: In function 'main':
+../simplecalculator.c:33: error: expected declaration or statement at end of input
+make: *** [simplecalculator.o] Error 1
+14:28:41 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../simplecalculator.c
+ 
+Building target: KEYPADandLCDdriver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPADandLCDdriver.map -mmcu=atmega16 -o "KEYPADandLCDdriver.elf"  ./keypad.o ./lcd.o ./simplecalculator.o   
+Finished building target: KEYPADandLCDdriver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPADandLCDdriver.elf  >"KEYPADandLCDdriver.lss"
+Finished building: KEYPADandLCDdriver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8434 bytes (51.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:29:42 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../simplecalculator.c: In function 'main':
+../simplecalculator.c:24: error: expected expression before '/' token
+make: *** [simplecalculator.o] Error 1
+14:29:49 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Building file: ../simplecalculator.c
+Invoking: AVR Compiler
+avr-gcc -I"C:\Users\karee\Desktop\externalheaderfiles" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"simplecalculator.d" -MT"simplecalculator.o" -c -o "simplecalculator.o" "../simplecalculator.c"
+In file included from ../lcd.h:14,
+                 from ../simplecalculator.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../simplecalculator.c
+ 
+Building target: KEYPADandLCDdriver.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPADandLCDdriver.map -mmcu=atmega16 -o "KEYPADandLCDdriver.elf"  ./keypad.o ./lcd.o ./simplecalculator.o   
+Finished building target: KEYPADandLCDdriver.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPADandLCDdriver.elf  >"KEYPADandLCDdriver.lss"
+Finished building: KEYPADandLCDdriver.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8468 bytes (51.7% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:32:29 **** Incremental Build of configuration Debug for project KEYPADandLCDdriver ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 KEYPADandLCDdriver.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8468 bytes (51.7% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (1.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

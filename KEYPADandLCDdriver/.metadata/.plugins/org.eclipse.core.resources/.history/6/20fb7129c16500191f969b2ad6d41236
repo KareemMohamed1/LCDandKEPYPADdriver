@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2019
+ *      Author: karee
+ */
+
+
+#include"keypad.h"
+#include "lcd.h"
+
+int main(void){
+	LCD_init();
+	LCD_sendCharacter('K');
+	uint8 key=0;
+	while(1)
+	{
+		/* if any switch pressed for more than 500 ms it counts more than one press */
+		key = KEYPAD_getPressedKey(); /* get the pressed key number */
+		if((key <= 9) && (key >= 0))
+		{
+			LCD_intgerToString(key); /* display the pressed keypad switch */
+		}
+		else
+		{
+			LCD_sendCharacter(key); /* display the pressed keypad switch */
+		}
+		_delay_ms(500); /* Press time */
+	}
+
+	return 0;
+
+}
